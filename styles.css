@@ -1,0 +1,28 @@
+h1{
+    color : red;
+}
+
+.button {
+color:black;
+font-style:Arial;
+font-size : 18px;
+text-align: center;
+}
+
+h2{
+    display:block;
+    color : black;
+    font-family:Arial;
+    font-size : 18px;
+
+}
+
+.container {
+    box-sizong: border-box;
+    width: 254px;
+    margin: 10px auto;
+    padding: 0 20px;
+    border: 2px solid gray;
+    font-size: 16px;
+    line-height: 20px;
+  }
