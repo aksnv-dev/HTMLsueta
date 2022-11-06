@@ -1,28 +1,105 @@
-h1{
-    color : red;
-}
+ html,
+ body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+ }
 
-.button {
-color:black;
-font-style:Arial;
-font-size : 18px;
-text-align: center;
-}
+ body{
 
-h2{
-    display:block;
-    color : black;
-    font-family:Arial;
-    font-size : 18px;
-
-}
-
-.container {
-    box-sizong: border-box;
-    width: 254px;
-    margin: 10px auto;
-    padding: 0 20px;
-    border: 2px solid gray;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 147px;
+    font-family: "Open Sans",sans-serif;
+    color: #1F1E1E;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
-  }
+    line-height: 1.3;
+ }
+
+ .page-header{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 147px;
+ }
+
+ .page-header_container{
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    max-width: 1414px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+   }
+
+
+.page-header_logo{
+      flex-shrink: 0;
+      width: 202px;
+      height: 147px;
+      text-decoration: none;
+      font-size: 0;
+    }
+
+ .page-header_logo-icon{
+   width: 100%;
+   height: 100%;
+ }
+
+ .page-header_nav{
+   margin: 0 200px;
+   display: flex;
+   align-items: baseline;
+ }
+ .page-header_nav-link{
+   margin: 0 25px;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 1.3;
+   text-decoration: none;
+   color: #1F1E1E;
+   transition: color 0.2s;
+ }
+ .page-header_nav-link:hover{
+   color:#BC3324;
+ }
+ .page-header_nav-link:active{
+   color:#BC3324;
+ }
+ .main{
+   flex: 1 0 auto;
+ }
+
+ .page-footer{
+   flex: 0 0 auto;
+ }
+
+ .btn{
+   box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   outline: none;
+   padding: 15px 40px;
+   background-color: transparent;
+   border: 1px solid #1F1E1E;
+   font-weight: 600;
+   font-size: 16px;
+   line-height:1.3;
+   text-align:center;
+   color:#1F1E1E;
+   transition: color 0.2s,background-color 0.2s;
+}
+
+.btn:hover{
+   color: white;
+   background-color: #1F1E1E;
+}
+
