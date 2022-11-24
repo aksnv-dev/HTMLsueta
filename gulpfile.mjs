@@ -15,9 +15,9 @@ import rename from "gulp-rename";
 import terser from "gulp-terser";
 
 import imagemin from "gulp-imagemin";
-import imageminGifsicle from "imagemin-gifsicle";
-import imageminMozjpeg from "imagemin-mozjpeg";
-import imageminOptipng from "imagemin-optipng";
+import imagemin_gifsicle from "imagemin-gifsicle";
+import imagemin_mozjpeg from "imagemin-mozjpeg";
+import imagemin_optipng from "imagemin-optipng";
 
 import svgmin from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
@@ -125,9 +125,9 @@ function images(){
     .src(resources.images)
     .pipe(
         imagemin([
-            imageminGifsicle({interlaced:true}),
-            imageminMozjpeg({quality:100, progression:true}),
-            imageminOptipng({optimizationLevel: 3 })
+            imagemin_gifsicle({interlaced:true}),
+            imagemin_mozjpeg({quality:100, progression:true}),
+            imagemin_optipng({optimizationLevel: 3 })
         ])
     )
     .pipe(gulp.dest("dist/assets/images")); 
@@ -152,7 +152,7 @@ function svgSprite() {
         .pipe(gulp.dest("dist/assets/icons"));
 }
 
-constbuild =gulp.series(
+const build =gulp.series(
     clean,
     copy,
     includeHtml,
