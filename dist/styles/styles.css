@@ -179,14 +179,14 @@ body {
   color: #BC3324;
   text-decoration: underline;
 }
-.events-card_title_text {
+.events-card_text {
   margin: 0 0 auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #1F1E1E;
 }
-.events-card_title_time {
+.events-card_time {
   margin: 15px 0 0;
   font-weight: 300;
   font-size: 14px;
