@@ -79,7 +79,7 @@ function style(){
     )
 
 
-    .pipe(gulp.dest("dist/syles"))
+    .pipe(gulp.dest("dist/styles"))
     .pipe(minify())
     .pipe(rename("styles.min.css"))
     .pipe(gulp.dest("dist/styles"))
@@ -152,7 +152,7 @@ function svgSprite() {
         .pipe(gulp.dest("dist/assets/icons"));
 }
 
-const build =gulp.series(
+const build = gulp.series(
     clean,
     copy,
     includeHtml,
