@@ -1,5 +1,5 @@
 .events-card{
-    display: flex;
+    display: block;
     width: 100%;
     margin: 0 30px 120px;
     max-width: 405px;
@@ -17,17 +17,20 @@
      display: block;
      margin-bottom: 25px;
      position: relative;
+     font-size: 0;
+     text-decoration: none;
      
      }
 
     &_picture::before{
         content:"";
         display: block;
-       
+      padding-top: 107.16%;
         width: 100%;
      }
      
     &_img{
+        display: block;
         position: absolute;
         top: 0;
         left: 0;
