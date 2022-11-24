@@ -28,15 +28,18 @@ body {
           flex-direction: column;
   min-height: 100vh;
   padding-top: 147px;
+  background-color: #dedede;
   background-image: url("../../assets/images/noise.png");
-  background-position: 0 0;
-  background-size: auto,100%;
-  background-repeat: repeat;
+  background-position: 0 0, 0 0;
+  background-size: auto,100% auto;
+  background-repeat: repeat, repeat-y;
   font-family: "Open Sans", sans-serif;
   color: #1F1E1E;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.3;
+  font-style: normal;
+  line-height: 1.375;
+  overflow-x: hidden;
 }
 .main {
   -webkit-box-flex: 1;
@@ -47,6 +50,16 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+}
+.a {
+  color: #1F1E1E;
+  outline: none;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .btn {
   -webkit-box-sizing: border-box;
@@ -89,7 +102,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -117,8 +129,7 @@ body {
   margin: 0 30px 120px;
   max-width: 405px;
   min-width: 280px;
-  width: calc(33.333%-60px);
-  margin-right: 60px;
+  width: calc(33.3333% - 60px);
 }
 .events-card_link {
   display: -webkit-box;
@@ -135,16 +146,13 @@ body {
   display: block;
   margin-bottom: 25px;
   position: relative;
-  width: 100%;
 }
 .events-card_picture::before {
   content: "";
   display: block;
-  /* top-padding: 107.16%; */
   width: 100%;
 }
 .events-card_img {
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -196,8 +204,6 @@ body {
   width: 100%;
   max-width: 1414px;
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 .listing_events-cards {
   display: -webkit-box;
@@ -239,8 +245,12 @@ _legend {
   margin: 0 auto;
   max-width: 1414px;
   width: 100%;
+  padding: 140px 0 100px;
   padding-left: 40px;
   padding-right: 40px;
+}
+_listing {
+  margin-bottom: 100px;
 }
 .page-header {
   position: fixed;
@@ -277,10 +287,13 @@ _legend {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 220px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
 }
 .page-header_logo {
   -ms-flex-negative: 0;
@@ -290,11 +303,11 @@ _legend {
   text-decoration: none;
   font-size: 0;
 }
-.page-header _logo-icon {
+.page-header_logo-icon {
   width: 100%;
   height: 100%;
 }
-.page-headerpage-header_nav {
+.page-header_nav {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
